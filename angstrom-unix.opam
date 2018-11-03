@@ -5,6 +5,7 @@ license: "BSD-3-clause"
 homepage: "https://github.com/inhabitedtype/angstrom"
 bug-reports: "https://github.com/inhabitedtype/angstrom/issues"
 dev-repo: "https://github.com/inhabitedtype/angstrom.git"
+synopsis: "Unix support for Angstrom"
 build: [
   ["jbuilder" "subst"] {pinned}
   ["jbuilder" "build" "-p" name "-j" jobs]
