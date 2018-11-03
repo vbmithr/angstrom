@@ -1,4 +1,4 @@
-opam-version: "1.2"
+opam-version: "2.0"
 maintainer: "Spiros Eliopoulos <spiros@inhabitedtype.com>"
 authors: [ "Spiros Eliopoulos <spiros@inhabitedtype.com>" ]
 license: "BSD-3-clause"
@@ -24,8 +24,8 @@ build-test: [
   ["jbuilder" "runtest" "-p" name]
 ]
 depends: [
-  "jbuilder" {build & >= "1.0+beta10"}
-  "alcotest" {test & >= "0.8.1"}
+  "jbuilder"    {build & >= "1.0+beta10"}
+  "alcotest"    {with-test & >= "0.8.1"}
   "bigstringaf"
+  "ocaml"       {>= "4.03.0"}
 ]
-available: [ ocaml-version >= "4.03.0" ]
